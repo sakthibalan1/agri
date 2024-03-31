@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Data</title>
+</head>
+<body>
+    <h1>Select Sensor Data</h1>
+    <label for="sensor">Select Sensor:</label>
+    <select id="sensor">
+        <option value="temperature">Temperature</option>
+        <option value="humidity">Humidity</option>
+        <option value="moisture">Moisture</option>
+    </select>
+    <label for="numberOfData">Number of Data Points:</label>
+    <input type="number" id="numberOfData" value="5" min="1">
+    <button onclick="fetchData()">Fetch Data</button>
+    <div id="sensorData"></div>
+    <script src="index.js"></script>
+</body>
+</html>
